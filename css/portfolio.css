@@ -1,0 +1,353 @@
+.portfolio {
+    position: relative;
+    margin-top: 150px;
+    background-color: #fafafa;
+    padding: 20px 0;
+    width: 100%;
+}
+
+.modal-container {
+    box-sizing: border-box;
+    font-family: "Noto Sans KR", sans-serif;
+    z-index: 99999;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100%;
+    background-color: #ffffff;
+    display: none;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+.modal-close {
+    position: absolute;
+    top: 5px;
+    right: 10px;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.fa-xmark:active {
+    transform: translate(-2px, 2px);
+}
+
+.portfolio-modal__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    color: #000000;
+    margin-bottom: 100px;
+}
+
+.modal-container h1 {
+    text-align: center;
+    color: #000000;
+    margin: 50px 0 0 0;
+}
+
+.portfolio-modal__content hr {
+    width: 600px;
+    height: 1px;
+    background-color: rgba(0, 0, 0, 0.1);
+    border: none;
+    margin: 30px auto;
+}
+
+.portfolio-modal__content__desc p {
+    text-align: center;
+    margin: 0;
+    line-height: 1.5rem;
+    letter-spacing: 2px;
+}
+
+.portfolio-modal__content__font {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.portfolio-modal__content__font h3 {
+    margin-top: 0;
+}
+
+.portfolio-modal__content__link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.portfolio-modal__link-box {
+    display: flex;
+    text-align: center;
+}
+
+.portfolio-modal__link-box a {
+    display: inline-block;
+    width: 120px;
+    margin-right: 20px;
+    padding: 10px 20px;
+    background-color: #000000;
+    color: #ffffff;
+    font-weight: 400;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.portfolio-modal__link-box a:last-child {
+    margin-right: 0;
+}
+
+.portfolio-modal__link-box a:hover {
+    background-color: #0c1250;
+}
+
+.player-content-image {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 150px;
+}
+
+.player-content-image img {
+    width: 500px;
+    height: 700px;
+}
+
+.samil-side-content {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.samil-sidetext {
+    text-align: center;
+}
+
+.samil-newside-image {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 468px;
+}
+
+.existing-side,
+.new-side {
+    display: flex;
+    flex-direction: column;
+    margin: 10px 50px;
+}
+
+.existing-side span,
+.new-side span {
+    margin: 10px 0;
+}
+
+.font-container {
+    display: flex;
+}
+
+.usefont {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0 20px;
+}
+
+.fontbox {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 10px;
+    border-radius: 50%;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+}
+
+.player-fontbox1 {
+    background-color: #75ac9e;
+}
+
+.player-fontbox2 {
+    background-color: #fefcf6;
+}
+
+.player-fontbox3 {
+    background-color: #ffffff;
+}
+
+.player-fontbox4 {
+    background-color: #000000;
+}
+
+.samil-fontbox1 {
+    background-color: #2a2b6c;
+}
+
+.samil-fontbox2 {
+    background-color: #ffffff;
+}
+
+.samil-fontbox3 {
+    background-color: #000000;
+}
+
+.samil-fontbox4 {
+    background-color: #1a7a4c;
+}
+
+.movie-fontbox1 {
+    background-color: #ff0062;
+}
+
+.movie-fontbox2 {
+    background-color: #ffffff;
+}
+
+.movie-fontbox3 {
+    background-color: #000000;
+}
+
+.movie-fontbox4 {
+    background-color: #464646;
+}
+
+.market-fontbox1 {
+    background-color: #dc143c;
+}
+
+.market-fontbox2 {
+    background-color: #ffffff;
+}
+
+.market-fontbox3 {
+    background-color: #000000;
+}
+
+.market-fontbox4 {
+    background-color: #c9ccd5;
+}
+
+.slide {
+    margin: 0 auto;
+    width: 1200px;
+}
+
+.swiper {
+    width: 800px;
+    height: 630px;
+    padding: 15px;
+}
+
+.swiper-wrapper {
+    width: 100%;
+    height: 600px;
+}
+
+.swiper-slide img {
+    width: 100%;
+    height: 100%;
+}
+
+.swiper-slide {
+    font-size: 18px;
+    background: #ffffff;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+    overflow: hidden;
+    box-shadow: rgba(0, 0, 0, 0.09) 0px 3px 12px;
+}
+
+.swiper-slide__hover {
+    font-family: "Noto Sans KR", sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(5px);
+    transition: 0.5s;
+    color: #ffffff;
+    line-height: 1.8rem;
+    letter-spacing: 1px;
+    opacity: 0;
+    pointer-events: none;
+    transition: 0.5s;
+}
+
+.swiper-slide:hover .swiper-slide__hover {
+    opacity: 1;
+    pointer-events: all;
+}
+
+.detail-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    width: 150px;
+    height: 40px;
+    background-color: #f4efea;
+    color: #000000;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.detail-btn:hover {
+    background-color: #2e3c7e;
+    color: #ffffff;
+}
+
+.swiper-button-prev::after,
+.swiper-button-next::after {
+    color: rgb(185, 185, 185);
+}
+
+.swiper-button-prev:hover::after,
+.swiper-button-next:hover::after {
+    color: rgb(156, 156, 156);
+}
+
+.swiper-button-next::after,
+.swiper-button-prev::after {
+    --swiper-navigation-size: 30px;
+}
+
+.swiper-button-next.swiper-button-disabled,
+.swiper-button-prev.swiper-button-disabled {
+    display: none;
+}
+
+.swiper-button-prev {
+    left: 120px;
+    right: auto;
+}
+
+.swiper-button-next {
+    right: 120px;
+    left: auto;
+}
+
+.swiper-horizontal>.swiper-scrollbar,
+.swiper-scrollbar.swiper-scrollbar-horizontal {
+    width: 100%;
+    left: 0;
+}

@@ -1,13 +1,13 @@
 function openModal(modalname) {
   document.get;
-  $("." + modalname).fadeIn(0);
+  $("." + modalname).fadeIn(200);
 }
 
 $(".modal-close").on("click", function () {
-  $(".modal-container").fadeOut(0);
-  $("html").css("overflow", "auto");
+  $(".modal-container").fadeOut(200);
+  $("html").css("overflow-y", "scroll");
 });
 
 $(".detail-btn").on("click", function () {
-  $("html").css("overflow", "hidden");
+  $("html").css("overflow-y", "hidden");
 });

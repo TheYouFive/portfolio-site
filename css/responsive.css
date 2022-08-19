@@ -14,71 +14,102 @@
     box-sizing: border-box;
   }
 
-  .drawer {
-    position: fixed;
-    display: block;
-    top: 10px;
-    right: 10px;
-    width: 30px;
-    height: 15px;
-    transition: 0.5s;
-    z-index: 9999;
+  .component-content-container {
+    width: 100%;
+    text-align: center;
   }
 
-  .drawer-bar {
-    position: absolute;
-    background-color: #000000;
-    margin: 3px 0;
+  .component-imagebox-common {
+    padding: 20px;
+    margin-bottom: 100px;
+  }
+
+  .component-content-container img {
     width: 100%;
-    height: 2px;
+  }
+
+  body.overflow {
+    overflow: hidden;
+  }
+
+  .aboutme h1,
+  .skills h1,
+  .learn-skills-h1,
+  .portfolio h1 {
+    font-size: 38px;
+  }
+
+  .gototop {
+    display: none;
+  }
+
+  .progress-bar-box,
+  .progress-bar {
+    display: none;
+  }
+
+  .progress-bar-box2,
+  .progress-bar2 {
+    display: flex;
+  }
+
+  /* header section */
+  .header-responsive {
+    position: fixed;
+    display: flex;
+    justify-content: flex-end;
+    z-index: 99998;
+    top: 5px;
+    left: 0;
+    width: 100%;
+    padding: 20px;
     transition: 0.3s;
   }
 
-  .drawer-bar:nth-child(1) {
-    top: 0;
+  .header-responsive.change {
+    background-color: #ffffff;
   }
 
-  .drawer-bar:nth-child(2) {
-    top: 50%;
+  .header-content-responsive {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    margin-bottom: 30px;
   }
 
-  .drawer-bar:nth-child(3) {
-    top: 100%;
+  .drawer-open {
+    font-size: 24px;
   }
 
-  .drawer.show .drawer-bar:nth-child(1) {
-    top: 50%;
-    transform: rotate(45deg);
-  }
-
-  .drawer.show .drawer-bar:nth-child(2) {
-    opacity: 0;
-    visibility: hidden;
-  }
-
-  .drawer.show .drawer-bar:nth-child(3) {
-    top: 50%;
-    transform: rotate(-45deg);
+  .drawer-close {
+    font-size: 28px;
   }
 
   .drawer-content {
     position: fixed;
     display: flex;
+    flex-direction: column;
     align-items: flex-start;
-    justify-content: center;
-    z-index: 9998;
+    z-index: 99999;
     top: 0;
     right: 0;
-    height: 100%;
-    width: 70%;
+    height: 100vh;
+    width: 100%;
     background-color: #ffffff;
     transform: translateX(100%);
-    transition: 0.5s;
+    transition: 0.3s;
+  }
+
+  .inner-responsive {
+    width: 100%;
+    padding: 25px 20px 20px 20px;
+  }
+
+  .drawer-content.show {
+    transform: translateX(0);
   }
 
   .drawer-nav {
-    position: absolute;
-    top: 70px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -93,24 +124,10 @@
     width: 180px;
   }
 
-  .drawer-modal {
-    position: fixed;
-    opacity: 0;
-    visibility: hidden;
+  .drawer-nav li a {
+    display: inline-block;
     width: 100%;
     height: 100%;
-    z-index: 9997;
-    background-color: rgba(0, 0, 0, 0.3);
-    transition: 0.5s;
-  }
-
-  .drawer-content.show {
-    transform: translateX(0);
-  }
-
-  .drawer-modal.show {
-    opacity: 1;
-    visibility: visible;
   }
 
   .nav {
@@ -162,15 +179,9 @@
     font-size: 18px;
   }
 
+  /*about section */
   .aboutme {
     margin-top: 50px;
-  }
-
-  .aboutme h1,
-  .skills h1,
-  .learn-skills-h1,
-  .portfolio h1 {
-    font-size: 38px;
   }
 
   .aboutme-content-top {
@@ -227,6 +238,7 @@
     font-size: 15px;
   }
 
+  /*skills section */
   .skills {
     margin-top: 50px;
   }
@@ -283,14 +295,6 @@
     height: 100%;
   }
 
-  .gototop {
-    display: none;
-  }
-
-  .contact-box__link a {
-    font-size: 32px;
-  }
-
   .learn-skills__beginner h3 {
     margin: 0;
   }
@@ -303,6 +307,7 @@
     width: 100%;
   }
 
+  /*portfolio section */
   .portfolio {
     margin-top: 50px;
   }
@@ -310,6 +315,10 @@
   .portfolio-modal__container {
     width: 95%;
     height: 80%;
+  }
+
+  .portfolio-modal__content hr {
+    width: 98%;
   }
 
   .portfolio-modal__content__font {
@@ -321,31 +330,105 @@
   }
 
   .portfolio-modal__content__desc p {
-    font-size: 15px;
+    font-size: 14px;
+  }
+
+  .modal-container h1 {
+    font-size: 24px;
+  }
+
+  .player-image-box {
+    width: 100%;
+    height: 500px;
+    flex-direction: column;
+  }
+
+  .player-image-box img {
+    width: 100%;
+    height: 100%;
+    margin: 20px 0;
+  }
+
+  .player-image-box img:first-child {
+    margin-bottom: 0;
+  }
+
+  .portfolio-modal__content {
+    margin-bottom: 60px;
+  }
+
+
+  .portfolio-modal__content__link {
+    width: 100%;
+  }
+
+  .portfolio-modal__link-box {
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .portfolio-modal__link-box a {
+    margin-right: 0;
+    margin-bottom: 10px;
+    width: 50%;
+  }
+
+  .portfolio-modal__link-box a:last-child {
+    margin-bottom: 0;
+  }
+
+  .samil-side-content {
+    flex-direction: column;
+  }
+
+  .samil-newside-image {
+    align-items: flex-start;
+    height: 200px;
+    margin: 20px 0;
+  }
+
+  .samil-newside-image img {
+    height: 100%;
+    margin: 0;
+  }
+
+  .existing-side,
+  .new-side {
+    margin-top: 0;
+    margin-bottom: 0;
   }
 
   .usefont {
     margin: 0 10px;
   }
 
+  .slide {
+    width: 100%;
+  }
+
   .swiper {
     width: 100%;
-    height: 550px;
+    height: 400px;
     padding: 0 20px;
   }
 
   .swiper-wrapper {
-    width: 100%;
-    height: 520px;
+    height: 370px;
+  }
+
+  .swiper-horizontal>.swiper-scrollbar,
+  .swiper-scrollbar.swiper-scrollbar-horizontal {
+    width: calc(100% - 40px);
+    left: 20px;
   }
 
   .swiper-button-prev,
-  .swiper-rtl .swiper-button-next,
-  .swiper-button-next,
-  .swiper-rtl .swiper-button-prev {
+  .swiper-button-next {
     display: none;
   }
 
+  /*contact section */
   .contact-box__text {
     margin: 0;
   }
@@ -371,18 +454,9 @@
     font-size: 21px;
   }
 
+  /* footer section */
   .footer-container span {
     font-size: 15px;
-  }
-
-  .progress-bar-box,
-  .progress-bar {
-    display: none;
-  }
-
-  .progress-bar-box2,
-  .progress-bar2 {
-    display: flex;
   }
 
   .footer-container {
@@ -403,6 +477,30 @@
     width: 100%;
   }
 
+  .gototop {
+    display: none;
+  }
+
+  .progress-bar-box,
+  .progress-bar {
+    display: none;
+  }
+
+  .progress-bar-box2,
+  .progress-bar2 {
+    display: flex;
+  }
+
+  .component-content-container {
+    width: 100%;
+    text-align: center;
+  }
+
+  .component-content-container img {
+    width: 100%;
+  }
+
+  /* header section */
   .nav-responsive {
     display: flex;
     align-items: center;
@@ -427,10 +525,12 @@
     display: none;
   }
 
+  /* about section */
   .aboutme-container hr {
     width: 100%;
   }
 
+  /* skills section */
   .skills-box {
     padding: 0 20px;
   }
@@ -438,10 +538,6 @@
   .learn-skills__beginner,
   .learn-skills__want {
     margin: 0;
-  }
-
-  .gototop {
-    display: none;
   }
 
   .want-imgbox a {
@@ -454,26 +550,52 @@
     height: 100px;
   }
 
+  /* portfolio section */
   .portfolio-modal__container {
     width: 80%;
     height: 80%;
   }
 
-  .swiper {
+  .slide {
     width: 100%;
-    height: 750px;
-    padding: 0 150px;
   }
 
-  .swiper-wrapper {
-    height: 720px;
+  .swiper {
+    width: 100%;
+    padding: 0 50px;
+  }
+
+  .swiper-horizontal>.swiper-scrollbar,
+  .swiper-scrollbar.swiper-scrollbar-horizontal {
+    width: calc(100% - 100px);
+    left: 50px;
   }
 
   .swiper-button-prev,
-  .swiper-rtl .swiper-button-next,
-  .swiper-button-next,
-  .swiper-rtl .swiper-button-prev {
+  .swiper-button-next {
     display: none;
+  }
+
+  .portfolio-modal__content__link {
+    width: 100%;
+  }
+
+  .portfolio-modal__link-box {
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .portfolio-modal__link-box a {
+    margin-right: 0;
+    margin-bottom: 10px;
+    width: 30%;
+  }
+}
+
+@media (min-width: 1024px) and (max-width: 1280px) {
+  .inner {
+    width: 100%;
   }
 
   .progress-bar-box,
@@ -485,9 +607,17 @@
   .progress-bar2 {
     display: flex;
   }
-}
 
-@media (min-width: 1024px) and (max-width: 1280px) {
+  .component-content-container {
+    width: 100%;
+    text-align: center;
+  }
+
+  .component-content-container img {
+    width: 100%;
+  }
+
+  /*header section */
   .nav-responsive {
     display: flex;
     align-items: center;
@@ -507,27 +637,18 @@
     color: rgb(78, 78, 78);
   }
 
-  .inner {
-    width: 100%;
-  }
-
-  .swiper {
-    width: 100%;
-    padding: 0;
-  }
-
   .side,
   .nav {
     display: none;
   }
 
-  .progress-bar-box,
-  .progress-bar {
-    display: none;
+  /*portfolio section */
+  .slide {
+    width: 100%;
   }
 
-  .progress-bar-box2,
-  .progress-bar2 {
-    display: flex;
+  .swiper-button-next,
+  .swiper-button-prev {
+    display: none;
   }
 }

@@ -1,0 +1,42 @@
+.component-h1 {
+    font-size: 48px;
+    text-align: center;
+    color: #000000;
+    margin: 0;
+}
+
+.component-content-container p {
+    line-height: 1.8rem;
+    margin: 0;
+    font-weight: 500;
+}
+
+.component-content-container h3 {
+    position: relative;
+    margin: 0;
+    font-weight: 600;
+}
+
+.component-content-container h3::after {
+    position: absolute;
+    content: "";
+    bottom: -7px;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+.component-imagebox-common {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 150px;
+    padding: 20px 0;
+    background-color: #fafafa;
+}
+
+.component-imagebox-common img {
+    margin: 20px 0;
+}

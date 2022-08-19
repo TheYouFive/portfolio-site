@@ -214,6 +214,11 @@
     margin-bottom: 0;
   }
 
+  .aboutme-content-top__image {
+    width: 100%;
+    padding: 30px;
+  }
+
   .aboutme-content-top__image h2 {
     font-size: 24px;
   }

@@ -1,0 +1,147 @@
+.skills {
+    display: flex;
+    background-color: #fafafa;
+    margin-top: 150px;
+    padding: 20px 0;
+}
+
+.skills h1:nth-child(2) {
+    margin: 70px 0 20px 0;
+}
+
+.skills-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.skills-box {
+    width: 100%;
+    font-family: "Noto Sans KR", sans-serif;
+    line-height: 1.8rem;
+    letter-spacing: 2px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.skills-content {
+    display: flex;
+    align-items: center;
+    border-radius: 10px;
+    margin: 20px 0;
+}
+
+.skills-content h2 {
+    margin-top: 0;
+}
+
+.skills-css {
+    flex-direction: row-reverse;
+    text-align: right;
+}
+
+.skills-image-box {
+    width: 250px;
+    height: 250px;
+}
+
+.skills-image-box img {
+    width: 100%;
+    height: 100%;
+}
+
+.learn-skills-box {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 20px 0;
+    border-radius: 10px;
+}
+
+.learn-skills__beginner,
+.learn-skills__want {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.learn-skills-box a {
+    border-radius: 10px;
+    transition: 0.5s;
+}
+
+.learn-skills-box a:hover {
+    background-color: #ffffff;
+    transform: scale(1.1);
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5);
+}
+
+.learn-skills-box h3 {
+    margin: 0 0 30px 0;
+}
+
+.jquery-box {
+    display: flex;
+}
+
+.jquery-box a {
+    width: 300px;
+    height: 80px;
+    padding: 20px;
+}
+
+.jquery-box a img {
+    width: 100%;
+    height: 100%;
+}
+
+.learn-skills__want a {
+    margin: 0 20px;
+}
+
+.want-imgbox {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.want-imgbox a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 120px;
+    height: 120px;
+}
+
+.want-imgbox a img {
+    width: 100%;
+    height: 100%;
+}
+
+.percent-container {
+    display: flex;
+    align-items: center;
+}
+
+.percent {
+    margin: 0 10px;
+}
+
+.percent-bar-box {
+    width: 100%;
+    height: 15px;
+    background-color: #cecece;
+    border-radius: 5px;
+}
+
+.percent-bar {
+    width: 0;
+    height: 100%;
+    background-image: linear-gradient(to left, #0ba360 0%, #3cba92 100%);
+    border-radius: 5px;
+    transition: 1.2s linear;
+}

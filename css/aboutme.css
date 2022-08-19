@@ -1,0 +1,120 @@
+.aboutme {
+    font-family: "Noto Sans KR", sans-serif;
+    margin-top: 150px;
+    padding: 20px 0;
+    width: 100%;
+}
+
+.aboutme-container h2 {
+    margin: 0;
+}
+
+.aboutme-container {
+    letter-spacing: 2px;
+}
+
+.aboutme-container hr {
+    width: 100%;
+    height: 1px;
+    border: none;
+    background-color: rgba(145, 145, 145, 0.3);
+}
+
+.blog-link {
+    padding: 3px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+    background-color: #f0f0f0;
+    letter-spacing: 1px;
+}
+
+.blog-link:hover {
+    background-color: #50586c;
+    color: #ffffff;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+}
+
+.aboutme-content-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    text-align: center;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+.aboutme-content-top__image h2 {
+    margin-bottom: 30px;
+    font-size: 28px;
+}
+
+.aboutme-content-top__image img {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+    height: 300px;
+    border-radius: 5px;
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.5);
+    margin: 0;
+}
+
+.aboutme-content-bottom__info-left-box h2,
+.aboutme-content-bottom__info-right-box h2 {
+    margin-bottom: 20px;
+}
+
+.aboutme-content-top__text {
+    line-height: 1.8rem;
+}
+
+.aboutme-content-top__text div {
+    margin-top: 10px;
+}
+
+.aboutme-content-top__text div:nth-child(1) {
+    margin-top: 0;
+}
+
+.aboutme-content-top__text span {
+    display: inline-block;
+    font-size: 20px;
+    color: #317773;
+}
+
+.aboutme-content-bottom {
+    display: flex;
+    justify-content: space-around;
+    line-height: 1.5rem;
+    margin-top: 20px;
+}
+
+.info-left span:nth-child(1) {
+    display: inline-block;
+    width: 100px;
+    height: 30px;
+    font-weight: 600;
+}
+
+.info-right_leftbox span {
+    display: block;
+    width: 100px;
+    height: 30px;
+    font-weight: 600;
+}
+
+.info-right-content {
+    display: flex;
+}
+
+.info-right_rightbox {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.info-right_rightbox span {
+    display: inline-block;
+    height: 30px;
+}

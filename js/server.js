@@ -4,17 +4,12 @@ const fs = require("fs");
 const PORT = process.env.PORT || 443; // HTTPS 는 443 포트를 사용합니다
 const options = {
   key: fs.readFileSync(
-    __dirname +
-      "D:/개발/포트폴리오/portfolio-site/node_modules/express/publisher-v.site_20220821DD6C4.key.pem"
+    __dirname + "./node_modules/express/publisher-v.site_20220821DD6C4.key.pem"
   ),
   cert: fs.readFileSync(
-    __dirname +
-      "D:/개발/포트폴리오/portfolio-site/node_modules/express/publisher-v.site_20220821DD6C4.crt.pem"
+    __dirname + "./node_modules/express/publisher-v.site_20220821DD6C4.crt.pem"
   ),
-  ca: fs.readFileSync(
-    __dirname +
-      "D:/개발/포트폴리오/portfolio-site/node_modules/express/ca-chain-bundle.pem"
-  ),
+  ca: fs.readFileSync(__dirname + "./node_modules/express/ca-chain-bundle.pem"),
 };
 // https 서버를 만들고 실행시킵니다
 https.createServer(options, app).listen(PORT);
@@ -27,15 +22,14 @@ const option =
     ? {
         key: fs.readFileSync(
           __dirname +
-            "D:/개발/포트폴리오/portfolio-site/node_modules/express/publisher-v.site_20220821DD6C4.key.pem"
+            "./node_modules/express/publisher-v.site_20220821DD6C4.key.pem"
         ),
         cert: fs.readFileSync(
           __dirname +
-            "D:/개발/포트폴리오/portfolio-site/node_modules/express/publisher-v.site_20220821DD6C4.crt.pem"
+            "./node_modules/express/publisher-v.site_20220821DD6C4.crt.pem"
         ),
         ca: fs.readFileSync(
-          __dirname +
-            "D:/개발/포트폴리오/portfolio-site/node_modules/express/ca-chain-bundle.pem"
+          __dirname + "./node_modules/express/ca-chain-bundle.pem"
         ),
       }
     : undefined;

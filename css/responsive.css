@@ -362,7 +362,6 @@
     margin-bottom: 60px;
   }
 
-
   .portfolio-modal__content__link {
     width: 100%;
   }
@@ -422,7 +421,7 @@
     height: 370px;
   }
 
-  .swiper-horizontal>.swiper-scrollbar,
+  .swiper-horizontal > .swiper-scrollbar,
   .swiper-scrollbar.swiper-scrollbar-horizontal {
     width: calc(100% - 40px);
     left: 20px;
@@ -450,13 +449,15 @@
     justify-content: flex-start;
   }
 
-  .contact-box__link a {
+  .contact-box__link a:nth-child(1) {
     font-size: 22px;
   }
 
-  .contact-box__link a:nth-child(2) {
+  .contact-box__link a:nth-child(2),
+  .contact-box__link a:nth-child(3) {
     padding: 8px 15px;
-    font-size: 21px;
+    font-size: 18px;
+    width: 125px;
   }
 
   /* footer section */
@@ -570,7 +571,7 @@
     padding: 0 50px;
   }
 
-  .swiper-horizontal>.swiper-scrollbar,
+  .swiper-horizontal > .swiper-scrollbar,
   .swiper-scrollbar.swiper-scrollbar-horizontal {
     width: calc(100% - 100px);
     left: 50px;

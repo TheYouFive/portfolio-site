@@ -7,6 +7,10 @@
   .usefont span {
     font-size: 13px;
   }
+
+  .portfolio-modal__link-box a {
+    font-size: 12px;
+  }
 }
 
 @media (min-width: 280px) and (max-width: 767px) {
@@ -421,6 +425,14 @@
     height: 370px;
   }
 
+  .swiper-slide__hover {
+    font-size: 14px;
+  }
+
+  .detail-btn {
+    width: 120px;
+  }
+
   .swiper-horizontal > .swiper-scrollbar,
   .swiper-scrollbar.swiper-scrollbar-horizontal {
     width: calc(100% - 40px);
@@ -445,19 +457,25 @@
     padding: 30px 0;
   }
 
-  .contact-box__link {
-    justify-content: flex-start;
+  .email-link {
+    font-size: 24px;
+    margin-bottom: 30px;
   }
 
-  .contact-box__link a:nth-child(1) {
-    font-size: 22px;
+  .link-btn {
+    flex-direction: column;
   }
 
-  .contact-box__link a:nth-child(2),
-  .contact-box__link a:nth-child(3) {
+  .link-btn a {
+    margin-right: 0;
+    margin-bottom: 20px;
     padding: 8px 15px;
-    font-size: 18px;
-    width: 125px;
+    font-size: 16px;
+    width: 150%;
+  }
+
+  .link-btn a:last-child {
+    margin-bottom: 0;
   }
 
   /* footer section */
@@ -467,6 +485,7 @@
 
   .footer-container {
     line-height: 1.7rem;
+    padding: 15px;
   }
 
   .footer-container br {
@@ -596,6 +615,28 @@
     margin-right: 0;
     margin-bottom: 10px;
     width: 30%;
+  }
+
+  /* contact section */
+  .email-link {
+    font-size: 38px;
+    margin-bottom: 30px;
+  }
+
+  .link-btn {
+    flex-direction: column;
+  }
+
+  .link-btn a {
+    margin-right: 0;
+    margin-bottom: 20px;
+    padding: 8px 15px;
+    font-size: 28px;
+    width: 200%;
+  }
+
+  .link-btn a:last-child {
+    margin-bottom: 0;
   }
 }
 

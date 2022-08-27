@@ -1,23 +1,23 @@
-.component-h1 {
+.common-h1 {
   font-size: 48px;
   text-align: center;
   color: #000000;
   margin: 0;
 }
 
-.component-content-container p {
+.common-content-container p {
   line-height: 1.8rem;
   margin: 0;
   font-weight: 500;
 }
 
-.component-content-container h3 {
+.common-content-container h3 {
   position: relative;
   margin: 0;
   font-weight: 600;
 }
 
-.component-content-container h3::after {
+.common-content-container h3::after {
   position: absolute;
   content: "";
   bottom: -7px;
@@ -27,7 +27,7 @@
   background-color: rgba(0, 0, 0, 0.2);
 }
 
-.component-imagebox-common {
+.common-imagebox {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -37,10 +37,10 @@
   background-color: #fafafa;
 }
 
-.component-imagebox-common:last-child {
+.common-imagebox:last-child {
   margin-bottom: 50px;
 }
 
-.component-imagebox-common img {
+.common-imagebox img {
   margin: 20px 0;
 }

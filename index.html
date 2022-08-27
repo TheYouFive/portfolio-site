@@ -124,7 +124,7 @@
 
   <section class="aboutme" id="aboutme">
     <div class="inner">
-      <h1 class="component-h1" data-aos="fade-up" data-aos-duration="1000" data-aos-offset="200" data-aos-delay="500">
+      <h1 class="common-h1" data-aos="fade-up" data-aos-duration="1000" data-aos-offset="200" data-aos-delay="500">
         ABOUT ME
       </h1>
       <div class="aboutme-container">
@@ -191,7 +191,7 @@
 
   <section class="skills" id="skills">
     <div class="inner">
-      <h1 class="component-h1" data-aos="fade-up" data-aos-duration="1000" data-aos-offset="200" data-aos-delay="300">
+      <h1 class="common-h1" data-aos="fade-up" data-aos-duration="1000" data-aos-offset="200" data-aos-delay="300">
         SKILLS
       </h1>
       <div class="skills-container">
@@ -203,7 +203,7 @@
             </div>
             <div class="html-content">
               <h2>HTML</h2>
-              <span>header,body,footer 등의 섹션을 올바르게 배치할 수 있고
+              <span>head,body,footer 등의 섹션을 올바르게 배치할 수 있고
                 <br />알아보기 쉽게 마크업 할 수 있으며 html의 구조를 파악할
                 수 있습니다.</span>
               <div class="percent-container">
@@ -263,7 +263,7 @@
             </div>
           </div>
         </div>
-        <h1 class="component-h1" data-aos="fade-up" data-aos-duration="1000" data-aos-offset="200" data-aos-delay="300">
+        <h1 class="common-h1" data-aos="fade-up" data-aos-duration="1000" data-aos-offset="200" data-aos-delay="300">
           JAVASCRIPT LIBRARY
         </h1>
         <div class="learn-skills-box">
@@ -301,7 +301,7 @@
   </section>
 
   <section class="portfolio" id="portfolio">
-    <h1 class="component-h1" data-aos="fade-up" data-aos-duration="1000" data-aos-offset="200" data-aos-delay="300">
+    <h1 class="common-h1" data-aos="fade-up" data-aos-duration="1000" data-aos-offset="200" data-aos-delay="300">
       PORTFOLIO
     </h1>
     <div class="slide" data-aos="fade-up" data-aos-duration="1000" data-aos-offset="200" data-aos-delay="500">
@@ -379,8 +379,8 @@
         </div>
         <hr>
       </div>
-      <div class="component-content-container samil-content-container">
-        <div class="component-imagebox-common samil-imagebox1">
+      <div class="common-content-container samil-content-container">
+        <div class="common-imagebox samil-imagebox1">
           <h3>변경 전 header</h3>
           <img src="./imgs/portfolio/samil/existing-header.PNG">
           <h3>변경 후 header</h3>
@@ -389,7 +389,7 @@
           <p>a 태그의 href를 이용해 해당 섹션으로 이동하게 변경하였습니다.</p>
         </div>
 
-        <div class="component-imagebox-common samil-imagebox2">
+        <div class="common-imagebox samil-imagebox2">
           <h3>변경 전 about</h3>
           <img src="./imgs/portfolio/samil/existing-about.PNG">
           <h3>변경 후 about</h3>
@@ -397,7 +397,7 @@
           <p>로고 디자인과 전체적인 섹션 디자인을 변경하였습니다. </p>
         </div>
 
-        <div class="component-imagebox-common samil-imagebox3">
+        <div class="common-imagebox samil-imagebox3">
           <div class="samil-side-content">
             <div class="existing-side">
               <h3>변경 전 side</h3>
@@ -415,7 +415,7 @@
           </div>
         </div>
 
-        <div class="component-imagebox-common samil-imagebox4">
+        <div class="common-imagebox samil-imagebox4">
           <img src="./imgs/portfolio/samil/existing-blog.PNG">
           <img src="./imgs/portfolio/samil/existing-gallery.PNG">
           <p>블로그와 이미지 갤러리 섹션을 삭제했습니다.</p>
@@ -430,8 +430,8 @@
         <div class="portfolio-modal__content__desc">
           <p>
             영화 박스오피스와 추천 영화 등을 소개하는 사이트입니다.<br />
-            반응형으로 제작하였고 공통되는 섹션 디자인을<br>
-            컴포넌트화 시켜 코드를 재활용했습니다.
+            반응형으로 제작하였고 공통 섹션 디자인은<br>
+            같은 css를 적용시켜 코드를 재활용했습니다.
           </p>
           <span>기여도 : 100%</span>
         </div>
@@ -466,18 +466,18 @@
         </div>
         <hr>
       </div>
-      <div class="component-content-container movie-content-container">
-        <div class="component-imagebox-common movie-imagebox1">
+      <div class="common-content-container movie-content-container">
+        <div class="common-imagebox movie-imagebox1">
           <h3>box office</h3>
           <img src="./imgs/portfolio/movie/boxoffice.PNG">
         </div>
 
-        <div class="component-imagebox-common movie-imagebox2">
-          <h3>component</h3>
+        <div class="common-imagebox movie-imagebox2">
+          <h3>common</h3>
           <img src="./imgs/portfolio/movie/new.PNG">
           <img src="./imgs/portfolio/movie/comingsoon.PNG">
           <img src="./imgs/portfolio/movie/recommendation.PNG">
-          <P>공통 디자인 부분은 컴포넌트화 시켜서 유지보수하기 쉽도록 구현하였습니다.</P>
+          <P>공통 디자인 부분은 같은 css를 사용해 유지보수하기 쉽도록 구현하였습니다.</P>
         </div>
       </div>
     </div>
@@ -490,7 +490,7 @@
         <div class="portfolio-modal__content__desc">
           <p>
             온라인 쇼핑몰 메인화면 사이트입니다.<br />
-            공통 디자인 부분을 컴포넌트화 시켜 코드를 재활용하였고<br>
+            공통 디자인 부분은 같은 css를 사용해 코드를 재활용하였고<br>
             따로 앱을 만드는 쇼핑몰 특성상 반응형은 미적용하였습니다.
           </p>
           <span>기여도 : 100%</span>
@@ -526,19 +526,19 @@
         </div>
         <hr>
       </div>
-      <div class="component-content-container market-content-container">
-        <div class="component-imagebox-common market-imagebox1">
+      <div class="common-content-container market-content-container">
+        <div class="common-imagebox market-imagebox1">
           <h3>header</h3>
           <img src="./imgs/portfolio/market/market-header.PNG">
           <p>메뉴탭에 마우스를 올리면 서브메뉴가 나타나도록 구현했습니다.</p>
         </div>
 
-        <div class="component-imagebox-common market-imagebox2">
-          <h3>component</h3>
+        <div class="common-imagebox market-imagebox2">
+          <h3>common</h3>
           <img src="./imgs/portfolio/market/market-new.PNG">
           <img src="./imgs/portfolio/market/market-best.PNG">
           <img src="./imgs/portfolio/market/market-recommendation.PNG">
-          <P>공통 디자인 부분은 컴포넌트화 시켜서 유지보수하기 쉽도록 구현하였습니다.</P>
+          <P>공통 디자인 부분은 같은 css를 사용해 유지보수하기 쉽도록 구현하였습니다.</P>
         </div>
       </div>
     </div>

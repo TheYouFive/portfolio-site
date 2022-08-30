@@ -156,7 +156,7 @@
   }
 
   .namebox h1 {
-    font-size: 250px;
+    font-size: 200px;
   }
 
   .inner {
@@ -263,11 +263,6 @@
     font-size: 16px;
   }
 
-  .jquery-box a {
-    width: 100%;
-    height: 100%;
-  }
-
   .html-content br {
     display: none !important;
   }
@@ -281,39 +276,24 @@
   }
 
   .skills-css {
+    flex-direction: column;
     text-align: center;
   }
 
-  .learn-skills-box {
+  .etc-skills-container a {
+    margin: 0;
+  }
+
+  .etc-skills-container {
     flex-direction: column;
-    width: 100%;
-    padding: 20px;
   }
 
-  .learn-skills__beginner,
-  .learn-skills__want {
-    width: 100%;
-    margin: 0;
+  .etc-skills h1 {
+    margin-bottom: 30px;
   }
 
-  .learn-skills__beginner {
-    margin-bottom: 20px;
-  }
-
-  .want-imgbox a {
-    height: 100%;
-  }
-
-  .learn-skills__beginner h3 {
-    margin: 0;
-  }
-
-  .learn-skills__want h3 {
-    margin-bottom: 20px;
-  }
-
-  .want-imgbox {
-    width: 100%;
+  .expected-skills-box {
+    margin-top: 50px;
   }
 
   /*portfolio section */
@@ -560,19 +540,40 @@
     padding: 0 20px;
   }
 
-  .learn-skills__beginner,
-  .learn-skills__want {
-    margin: 0;
+  .html-content br {
+    display: none !important;
   }
 
-  .want-imgbox a {
-    width: 100px;
-    height: 100px;
+  .css-content br {
+    display: none !important;
   }
 
-  .jquery-box a {
+  .js-content br {
+    display: none !important;
+  }
+
+  .skills-content {
+    flex-direction: column;
+  }
+
+  .etc-skills-container {
+    flex-direction: column;
+  }
+
+  .skills-box {
     width: 100%;
-    height: 100px;
+    padding: 0 20px;
+    text-align: center;
+    font-size: 20px;
+  }
+
+  .skills-css {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .expected-skills-box {
+    margin-top: 50px;
   }
 
   /* portfolio section */
@@ -687,6 +688,15 @@
   .side,
   .nav {
     display: none;
+  }
+
+  /*skills section */
+  .etc-skills-container {
+    flex-direction: column;
+  }
+
+  .expected-skills-box {
+    margin-top: 50px;
   }
 
   /*portfolio section */

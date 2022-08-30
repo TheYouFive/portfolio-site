@@ -14,13 +14,6 @@
   padding: 100px 0;
 }
 
-.contact h1 {
-  font-size: 48px;
-  text-align: center;
-  color: #000000;
-  margin: 0;
-}
-
 .contact-box__link {
   display: flex;
   flex-direction: column;
@@ -36,33 +29,30 @@
   justify-content: center;
 }
 
-.email-link,
-.link-btn a {
-  font-family: "Noto Sans KR", sans-serif;
-}
-
 .link-btn a {
   padding: 10px 10px;
   text-align: center;
 }
 
 .email-link {
+  color: #000000;
   margin-bottom: 50px;
   font-size: 48px;
 }
 
 .email-link:hover {
-  color: #0c1250;
+  color: #050941;
 }
 
 .link-btn a {
   margin-right: 20px;
   display: block;
-  background-color: #101820;
+  background-color: #ffffff;
+  border: 1px solid rgba(16, 24, 32, 0.3);
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
   font-size: 24px;
-  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1);
   transition: 0.3s;
-  color: #ffffff;
+  color: #000000;
   width: 160px;
 }
 
@@ -71,6 +61,6 @@
 }
 
 .link-btn a:hover {
-  background-color: #fae100;
-  color: #000000;
+  background-color: #101820;
+  color: #ffffff;
 }

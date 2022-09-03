@@ -83,10 +83,12 @@
 
   .drawer-open {
     font-size: 24px;
+    cursor: pointer;
   }
 
   .drawer-close {
     font-size: 28px;
+    cursor: pointer;
   }
 
   .drawer-content {
@@ -413,7 +415,7 @@
     width: 120px;
   }
 
-  .swiper-horizontal > .swiper-scrollbar,
+  .swiper-horizontal>.swiper-scrollbar,
   .swiper-scrollbar.swiper-scrollbar-horizontal {
     width: calc(100% - 40px);
     left: 20px;
@@ -591,7 +593,7 @@
     padding: 0 50px;
   }
 
-  .swiper-horizontal > .swiper-scrollbar,
+  .swiper-horizontal>.swiper-scrollbar,
   .swiper-scrollbar.swiper-scrollbar-horizontal {
     width: calc(100% - 100px);
     left: 50px;

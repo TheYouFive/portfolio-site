@@ -6,6 +6,10 @@
   margin-bottom: 20px;
 }
 
+.common-content-container {
+  text-align: center;
+}
+
 .common-content-container p {
   line-height: 1.8rem;
   margin: 0;

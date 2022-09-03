@@ -328,22 +328,6 @@
     font-size: 24px;
   }
 
-  .player-image-box {
-    width: 100%;
-    height: 500px;
-    flex-direction: column;
-  }
-
-  .player-image-box img {
-    width: 100%;
-    height: 100%;
-    margin: 20px 0;
-  }
-
-  .player-image-box img:first-child {
-    margin-bottom: 0;
-  }
-
   .portfolio-modal__content {
     margin-bottom: 60px;
   }
@@ -366,6 +350,19 @@
 
   .portfolio-modal__link-box a:last-child {
     margin-bottom: 0;
+  }
+
+  .common-imagebox {
+    width: 100%;
+    padding: 10px;
+  }
+
+  .common-imagebox img {
+    width: 100%;
+  }
+
+  .common-imagebox p {
+    font-size: 15px;
   }
 
   .samil-side-content {
@@ -620,6 +617,19 @@
     width: 30%;
   }
 
+  .common-imagebox {
+    width: 100%;
+    padding: 10px;
+  }
+
+  .common-imagebox img {
+    width: 70%;
+  }
+
+  .common-imagebox p {
+    font-size: 18px;
+  }
+
   /* contact section */
   .email-link {
     font-size: 38px;
@@ -709,5 +719,22 @@
   .swiper-button-next,
   .swiper-button-prev {
     display: none;
+  }
+
+  .common-content-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0 10px;
+  }
+
+  .common-imagebox {
+    width: 100%;
+    padding: 10px;
+  }
+
+  .common-imagebox img {
+    width: 50%;
   }
 }

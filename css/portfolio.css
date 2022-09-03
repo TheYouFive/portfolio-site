@@ -108,6 +108,10 @@
   background-color: #0c1250;
 }
 
+.riot-imagebox6 img {
+  margin-bottom: 30px;
+}
+
 .samil-side-content {
   display: flex;
   justify-content: center;
@@ -155,6 +159,22 @@
   margin-bottom: 10px;
   border-radius: 50%;
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+}
+
+.riot-fontbox1 {
+  background-color: #29323c;
+}
+
+.riot-fontbox2 {
+  background-color: #ffffff;
+}
+
+.riot-fontbox3 {
+  background-color: #000000;
+}
+
+.riot-fontbox4 {
+  background-color: #dc143c;
 }
 
 .samil-fontbox1 {
@@ -319,7 +339,7 @@
   left: auto;
 }
 
-.swiper-horizontal > .swiper-scrollbar,
+.swiper-horizontal>.swiper-scrollbar,
 .swiper-scrollbar.swiper-scrollbar-horizontal {
   width: 100%;
   left: 0;

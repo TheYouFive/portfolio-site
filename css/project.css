@@ -1,4 +1,4 @@
-.portfolio {
+.project {
   position: relative;
   margin-top: 150px;
   background-color: #fafafa;
@@ -32,7 +32,7 @@
   transform: translate(-2px, 2px);
 }
 
-.portfolio-modal__content {
+.project-modal__content {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -48,7 +48,7 @@
   margin: 50px 0 0 0;
 }
 
-.portfolio-modal__content hr {
+.project-modal__content hr {
   width: 600px;
   height: 1px;
   background-color: rgba(0, 0, 0, 0.1);
@@ -56,39 +56,39 @@
   margin: 30px auto;
 }
 
-.portfolio-modal__content__desc {
+.project-modal__content__desc {
   text-align: center;
   line-height: 1.5rem;
   letter-spacing: 2px;
 }
 
-.portfolio-modal__content__desc span {
+.project-modal__content__desc span {
   font-weight: 600;
 }
 
-.portfolio-modal__content__font {
+.project-modal__content__font {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
 }
 
-.portfolio-modal__content__font h3 {
+.project-modal__content__font h3 {
   margin-top: 0;
 }
 
-.portfolio-modal__content__link {
+.project-modal__content__link {
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-.portfolio-modal__link-box {
+.project-modal__link-box {
   display: flex;
   text-align: center;
 }
 
-.portfolio-modal__link-box a {
+.project-modal__link-box a {
   display: inline-block;
   width: 120px;
   margin-right: 20px;
@@ -100,11 +100,11 @@
   transition: 0.3s;
 }
 
-.portfolio-modal__link-box a:last-child {
+.project-modal__link-box a:last-child {
   margin-right: 0;
 }
 
-.portfolio-modal__link-box a:hover {
+.project-modal__link-box a:hover {
   background-color: #0c1250;
 }
 

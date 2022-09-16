@@ -13,8 +13,8 @@ $(window).on("scroll", function () {
   if (pos2 > $("#skills").offset().top) {
     highlightLink("skills");
   }
-  if (pos2 > $("#portfolio").offset().top) {
-    highlightLink("portfolio");
+  if (pos2 > $("#project").offset().top) {
+    highlightLink("project");
   }
   if (
     pos2 > $("#contact").offset().top ||
